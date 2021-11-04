@@ -1,0 +1,10 @@
+.shopItems-wrapper{
+    width: 100%;
+    background-color: #eee;
+}
+
+.shopItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

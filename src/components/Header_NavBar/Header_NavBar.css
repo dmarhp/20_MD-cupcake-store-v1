@@ -1,0 +1,16 @@
+.header_NavBar-wrapper{
+    width: 1440px;
+    display: flex;
+    padding: 8px 24px;
+    background-color: red;
+}
+
+.header_NavBar-brand{
+    margin: 5px 16px 5px 0;
+}
+
+
+.header_NavBar-right{
+    background-color: green;
+
+}

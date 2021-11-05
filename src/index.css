@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Kaushan Script', cursive;
   font-size: 16px;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;

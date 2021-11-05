@@ -1,8 +1,8 @@
-import "./NavBar.css"
+import "./NavBarShop.css"
 import shopItems from "../../props";
 import Button from "../Button/Button";
 
-const NavBar = () => {
+const NavBarShop = () => {
 
     const types = [];
     shopItems.forEach(item => {
@@ -12,7 +12,7 @@ const NavBar = () => {
     });
 
     return (
-        <div className="navBar-wrapper">
+        <div className="navBarShop-wrapper">
             <Button buttonName="ALL"/>
             {
                 types.map((item) => {
@@ -26,4 +26,4 @@ const NavBar = () => {
 }
 
 
-export default NavBar;
+export default NavBarShop;

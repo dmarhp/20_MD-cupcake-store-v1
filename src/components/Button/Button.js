@@ -1,8 +1,11 @@
 import "./Button.css"
 
+let filterType = "";
+
 const Button = (props) => {
     const clickHandler = () =>{
-        alert("You choose " + props.buttonName);
+        filterType = props.buttonName;
+        alert(filterType);
     }
 
     return (
@@ -11,3 +14,4 @@ const Button = (props) => {
 }
 
 export default Button;
+export {filterType}

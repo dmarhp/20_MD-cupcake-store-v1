@@ -1,5 +1,5 @@
 import "./AboutUs.css"
-import Header1 from "../Header1/Header1";
+import Heading1 from "../Heading1/Heading1";
 import Button from "../Button/Button";
 import shopItems from "../../props";
 
@@ -8,7 +8,7 @@ const AboutUs = () => {
     return (
         <div className="aboutUs content">
             <div className="aboutUs__left">
-                <Header1
+                <Heading1
                     className="aboutUs__left-title"
                     hTextWhite="About"
                     hTextPink="Us"

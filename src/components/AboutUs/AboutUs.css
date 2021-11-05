@@ -1,26 +1,26 @@
-.aboutUs{
+.aboutUs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 96px 0;
 }
 
-.aboutUs__left{
+.aboutUs__left {
     display: flex;
     flex-direction: column;
     justify-content: right;
 }
 
-.aboutUs__left .header1 {
+.aboutUs__left .heading1 {
     margin: 0 8px 8px;
 }
 
-.aboutUs__left-text{
+.aboutUs__left-text {
     margin: 24px 8px;
     width: 75%;
     color: #6c757d;
 }
 
-.aboutUs__image-wrapper{
+.aboutUs__image-wrapper {
     position: relative;
 }
 
@@ -36,12 +36,12 @@
     transition: all 1s ease-in-out;
 }
 
-.aboutUs__image-wrapper:hover:before{
+.aboutUs__image-wrapper:hover:before {
     top: 0;
     left: 0;
 }
 
-.aboutUs__image{
+.aboutUs__image {
     width: 100%;
     height: 100%;
 }

@@ -1,18 +1,18 @@
 import "./ShopItems.css";
-import Header1 from "../Header1/Header1";
-import NavBar from "../NavBar/NavBar";
+import Heading1 from "../Heading1/Heading1";
+import NavBarShop from "../NavBarShop/NavBarShop";
 import shopItems from "../../props";
 import Card from "../Card/Card";
-
 const ShopItems = () => {
+
     return (
         <div className="shopItems-wrapper">
             <div className="shopItems content">
-                <Header1 hTextWhite="Our" hTextPink="Store"/>
-                <NavBar/>
+                <Heading1 hTextWhite="Our" hTextPink="Store"/>
+                <NavBarShop/>
                 <div className="card-wrapper">
                     {
-                        shopItems.map((item, index) => {
+                       shopItems.map((item, index) => {
                             return (
                                 <Card
                                     key={index}

@@ -1,10 +1,11 @@
-.header1 {
+.heading1 {
     font-size: 40px;
     color: black;
     margin: 0 auto 8px;
 }
 
-.header1-pink {
+.heading1-pink {
     font-size: 64px;
     color: #ef7998;
+    font-weight: bolder;
 }

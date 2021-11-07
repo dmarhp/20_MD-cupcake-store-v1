@@ -1,0 +1,22 @@
+@import "./src/styles/helper";
+
+.button{
+  font-family: $Kaushan;
+  font-size: 16px;
+  background-color: transparent;
+  border: $mainBorder $mainBlack;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+
+  &:hover, &:active{
+    background-color: $mainBlack;
+    color: $mainPink;
+  }
+
+  &:active{
+    ;
+  }
+}

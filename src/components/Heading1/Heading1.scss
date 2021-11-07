@@ -1,0 +1,20 @@
+@import "./src/styles/helper";
+
+.heading1-wrapper{
+  margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heading1 {
+  font-size: 40px;
+  line-height: 1.5;
+  color: $mainBlack;
+}
+
+.heading1-pink {
+  font-size: 64px;
+  color: $mainPink;
+  font-weight: bolder;
+}

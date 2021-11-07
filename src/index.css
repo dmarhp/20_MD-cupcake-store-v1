@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import "./styles/reset.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
@@ -6,16 +6,13 @@ body {
   margin: 0;
   font-family: 'Kaushan Script', cursive;
   font-size: 16px;
+  line-height: 24px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
-

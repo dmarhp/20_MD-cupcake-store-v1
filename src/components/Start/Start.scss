@@ -1,0 +1,29 @@
+.start{
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(249, 228, 148, 0.5),rgba(249, 228, 148, 0.5)), url(https://js-beginners.github.io/filter-project/img/headerBcg.jpeg) center/cover fixed no-repeat;
+  position: relative;
+}
+
+.start-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  flex-direction: column;
+}
+
+.start-content .heading1{
+  color: white;
+}
+
+.start-content-buttonWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.start-content-buttonWrapper .button{
+  font-size: 24px;
+  border-width: 3px;
+}

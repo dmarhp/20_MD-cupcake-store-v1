@@ -27,7 +27,8 @@ const Shop = () => {
 
         let itemsToSearch: { title: string; price: number; imgSrc: string; type: string; }[] = [];
         if (inputValue === "") {
-            itemsToSearch = itemsShow;
+            console.log(itemsShow)
+            itemsToSearch = itemsToShow;
         } else {
             itemsShow.map((item) => {
                 if (item.title.toUpperCase().includes(inputValue.toUpperCase())) {

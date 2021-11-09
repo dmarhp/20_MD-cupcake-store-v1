@@ -24,7 +24,6 @@
   }
 
   &:hover .store-item-icon{
-    //background-color: #ef7998;
     transform: translate(-100%, -100%);;
   }
 }
@@ -51,4 +50,10 @@
   background: $mainYellow;
   border-top-left-radius: 16px;
   transition: all 1s ease-in-out;
+
+  &:active {
+    color: $mainWhite;
+    transition: color 0.1s linear;
+  }
+
 }

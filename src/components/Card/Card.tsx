@@ -11,9 +11,9 @@ interface Props {
 }
 
 const getChosenElement = (title: string) =>{
-    const findedElement = shopItemList.find(item => item.title = title)
-    if (findedElement) {
-        cartItems[cartItems.length] = findedElement;
+    const findElement = shopItemList.find(item => item.title = title)
+    if (findElement) {
+        cartItems[cartItems.length] = findElement;
     }
     console.log(cartItems);
 }

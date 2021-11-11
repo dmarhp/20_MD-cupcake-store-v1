@@ -19,4 +19,9 @@
   &:active{
     ;
   }
+
+  & + .chosen{
+    outline: $mainGrey solid 4px;
+
+  }
 }

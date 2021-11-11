@@ -10,6 +10,7 @@ const AboutUs = () => (
     <div className="aboutUs-wrapper container">
     <div className="aboutUs__left">
     <Heading1
+        textColor={"black"}
         text="About"
 textPink="Us"
 />

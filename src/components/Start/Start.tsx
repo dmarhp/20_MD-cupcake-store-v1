@@ -10,6 +10,7 @@ const Start = () => {
             <Header/>
             <div className="start-content">
                 <Heading1
+                    textColor={"white"}
                     text="Welcome To"
                     textPink="Grandma's"
                 />

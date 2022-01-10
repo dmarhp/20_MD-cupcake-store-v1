@@ -1,7 +1,7 @@
 import "./Shop.scss"
 import shopItemList from "../shopItemList";
 import Button from "../Button/Button";
-import {ChangeEvent, useEffect, useState} from "react";
+import {ChangeEvent, useState} from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import Card from "../Card/Card";
 import Heading1 from "../Heading1/Heading1";
@@ -13,19 +13,13 @@ shopItemList.forEach((item) => {
     }
 });
 shopItemTypes.sort();
-let itemsToShow = shopItemList;
 
-let titleColor = "";
-let timer: NodeJS.Timeout;
+let itemsToShow = shopItemList;
 
 const Shop = () => {
 
-    const [itemsShow, setItemsShow] = useState(itemsToShow);
-    const [searchInputText, setSearchInputText] = useState('');
-    const [filterValue, setFilterValue] = useState("");
-    const [counter, setCounter] = useState(0);
-
-
+    let [itemsShow, setItemsShow] = useState(itemsToShow);
+    const [searchInputText, setSearchInputText] = useState('')
 
     const searchBar = (event: ChangeEvent<HTMLInputElement>) => {
         const inputValue = event.target.value;
@@ -33,6 +27,7 @@ const Shop = () => {
 
         let itemsToSearch: { title: string; price: number; imgSrc: string; type: string; }[] = [];
         if (inputValue === "") {
+            console.log(itemsShow)
             itemsToSearch = itemsToShow;
         } else {
             itemsShow.map((item) => {
@@ -45,9 +40,7 @@ const Shop = () => {
     }
 
     const clickFilterButton = (value: string) => {
-        setFilterValue(value);
-        setCounter(0);
-
+        console.log(value)
         if (value !== "ALL") {
             itemsToShow = []
             shopItemList.map((item) => {
@@ -55,45 +48,16 @@ const Shop = () => {
                     itemsToShow.push(item)
                 }
             })
-        } else if (value === "ALL") {
+        } else if (value==="ALL"){
             itemsToShow = shopItemList;
         }
         setItemsShow([...itemsToShow]);
-
-        clearTimeout(timer);
     }
-
-    useEffect(() => {
-        alert("Component Shop is loaded");
-    }, []);
-
-
-
-    useEffect(() => {
-        titleColor = generateColor();
-    }, [filterValue]);
-
-
-
-    const generateColor = () => {
-        return '#' + Math.random().toString(16).substr(-6);
-    }
-
-    useEffect(() => {
-        if (timer) {
-            clearTimeout(timer);
-        }
-        timer = setTimeout(() => setCounter(counter + 1), 1000);
-        if (counter >= 9 && counter % 2 !== 0) {
-            titleColor = generateColor();
-        }
-    }, [counter]);
 
     return (
         <div className="partShop">
             <div className="container">
-                <Heading1 textColor={titleColor} text="Priecīgus" textPink="Ziemassvētkus"/>
-                <div>timer: {counter}</div>
+                <Heading1 text="Our" textPink="Store" />
                 <div className="ButtonBar-wrapper">
                     <Button buttonName={"ALL"} clickHandler={() => clickFilterButton("ALL")}/>
                     {
